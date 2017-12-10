@@ -1,0 +1,21 @@
+#formHolder form{
+  height: 370px;
+  margin-top: 18vh;
+  box-shadow: 0 0 1vw;
+  font-size: 4vh;
+  font-weight: bold;
+  display: block;
+  background-color: #F8F8FF;
+  text-align: center;
+  width: 30vw;
+  margin-right: 35vw;
+  margin-left: 35vw;
+}
+
+.invalidInputHolder{
+  width:100%;
+  height:40px;
+  text-align:center;
+  color:red;
+  font-size:15px;
+}

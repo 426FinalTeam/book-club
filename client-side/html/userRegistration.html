@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Book Club</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/core.css" />
+    <link rel="stylesheet" href="../css/fullPageFormStyling.css" />
+    <link rel="stylesheet" href="../css/landingPage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../javascript/userRegistration.js"></script>
+</head>
+
+<body>
+    <div id="topInfoContainer">
+        <div class="infoBarElement" id="nextUpBrand" style="margin: 0; text-align:left">
+            <div id="logo">
+                <!--img tag with fake 'logo' could go here in the future-->
+            </div>
+            <div id="caption">
+                <h1>
+                    <a href="../index.html">Book Club</a>
+                </h1>
+            </div>
+        </div>
+        <div class="infoBarElement" style="text-align: center;">
+            <h1>Welcome to Book Club!</h1>
+        </div>
+        <div class="infoBarElement" style="text-align: right;">
+            <h1 id="userName"></h1>
+        </div>
+    </div>
+
+    <div id="formHolder">
+        <form style="height:420px;">
+            <div id="formContent">
+                <p>Create Book Club Account</p>
+                <input id="user" name="username" class="centeredInput" type="text" placeholder="Username"></input>
+                <input id="email" name="email" class="centeredInput" type="email" placeholder="Email"></input>
+                <input id="pass" name="password" class="centeredInput" type="password" placeholder="Password"></input>
+                <input id="cPass" name="confirmPassword" class="centeredInput" type="password" placeholder="Confirm Password"></input>
+                <div class="invalidInputHolder"></div>
+                <button id="createAccount" class="loginBtn loginBtn--facebook" type="button">
+                    Register Account
+                </button>
+            </div>
+        </form>
+    </div>
+</body>

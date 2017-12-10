@@ -1,0 +1,162 @@
+#otherUserInfoContentContainer{
+  height:80%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.rowOfProfileContainers{
+  display:flex;
+  flex-direction:row;
+  width:100%;
+  height:200px;
+}
+
+.rowOfProfileContainers_userInfo{
+  text-align:center;
+  width:25%;
+  height:100%;
+}
+
+.rowOfProfileContainers_userInfo > p{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.otherUserProfilePic{
+  width:130px;
+  height:130px;
+  border-radius:50%;
+}
+
+.otherUserButton{
+  font-size:10px;
+  padding-top:3px;
+  padding-bottom:3px;
+}
+
+#showMoreHolder{
+  height:5%;
+  text-align:center;
+}
+
+#showMoreHolder img{
+  height:100%;
+  width:2.5%;
+  margin-left:3px;
+  margin-right:3px;
+}
+
+/*Styling for user info popup*/
+.userInfoPopupHolder{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.userInfoPopup{
+  position:absolute;
+  display:inline-block;
+  margin-left:10vw;
+  margin-right:10vw;
+  height:80vh;
+  width:80vw;
+  margin-top:10vh;
+  margin-bottom:10vh;
+  background-color:white;
+  text-align:center;
+}
+
+.userInfoPopup_content{
+  margin-top:60px;
+  display:inline-block;
+  width:100%;
+
+}
+
+.confirmationPopup_button{
+  margin-top:15px;
+}
+
+#userPopupPic{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  margin-top:10px;
+}
+
+#faveBooks{
+  padding-left:0px;
+  list-style-type:none;
+  overflow:hidden;
+  overflow-y:scroll;
+  height:270px;
+}
+
+#faveBooks li{
+  display:inline-block;
+  padding-bottom:10px;
+  padding-top:10px;
+}
+
+.bookInList{
+  width:100%;
+  height:55px;
+  text-align:left;
+  border-top:solid 5px grey;
+  margin-top:1vh;
+  margin-bottom:1vh;
+  box-shadow:4px 6px 13px 0px rgba(173,173,173,0.4);
+  border-top:solid 5px grey;
+}
+
+.bookInList p{
+  display:inline-block;
+  margin-bottom:0px;
+  width:80%;
+  text-align:center;
+  margin-left:0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align:middle;
+  margin-top:0px;
+}
+
+.popupList{
+  text-align:center;
+  list-style-type:none;
+  padding-left:0px;
+  margin-top:0px;
+}
+
+.popupList > li{
+  display:inline-block;
+  text-align:center;
+  width:50%;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+#nameGoesHere{
+  margin-top:2px;
+  margin-bottom:2px;
+}
+
+.titleButtonPopupContainer{
+  display:inline-block;
+  text-align:center;
+  vertical-align:top;
+  width:90%;
+}
+
+.faveBooksButton{
+  height:30px;
+  font-weight:400;
+  font-size:15px;
+  margin-top:5px;
+}

@@ -1,0 +1,11 @@
+#topInfoContainer {
+	background-color: #7825BE;
+}
+
+button {
+	background-color: #7825BE;
+	border-color: #7825BE;
+}
+button:active {
+	color: #7825BE;
+}

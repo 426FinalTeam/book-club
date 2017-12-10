@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Book Club</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/core.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
+  <link rel="stylesheet" href="../css/userInfo.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  <script type="text/javascript" src="../javascript/logout.js"></script>
+</head>
+
+<body>
+  <!--<div id="deleteConfirm" title="Delete Account" hidden>
+    <p>By confirming, you are permantely deleting your account and will be unable to reactivate it. Are you sure?</p>
+  </div>-->
+  <div id="topInfoContainer">
+    <div class="infoBarElement" id="nextUpBrand" style="margin: 0; text-align:left">
+      <div id="logo">
+        <!--img tag with fake 'logo' could go here in the future-->
+      </div>
+      <div id="caption">
+        <h1>
+          <a href="main.html">Book Club</a>
+        </h1>
+      </div>
+    </div>
+    <div class="infoBarElement" style="text-align: center;">
+      <h1>My Info</h1>
+    </div>
+    <div class="infoBarElement" style="text-align: right;">
+      <h1 id="userName"></h1>
+    </div>
+  </div>
+
+  <div class="flexHolder">
+    <div class="fullWidthDiv" id="userImgHolder">
+      <img id="bigUserPic">
+      <h3 id="nameGoesHere"></h3>
+    </div>
+    <div class="mainContentHolder">
+      <ul class="fullWidthList">
+        <li id="personalInfo">
+          <p class="dropdownTitle">Personal Info</p>
+          <div class="fullWidthList_hiddenListContent" style="height: auto;">
+            <ul id="userInfo">
+            </ul>
+          </div>
+        </li>
+        <li id="favBook">
+          <p class="dropdownTitle">Favorite Books</p>
+          <div id="favBook_hightestHolder" class="fullWidthList_hiddenListContent" style="height: 240px;">
+            <div class="flexHolderRow">
+              <div id="scrollLeft" class="scrollContainers">
+                <img src="../images/leftScroll.png">
+              </div>
+              <ul id="faveBooks">
+              </ul>
+              <div id="scrollRight" class="scrollContainers">
+                <img src="../images/rightScroll.png">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="updatePreferences">
+          <p class="dropdownTitle">Update Preferences</p>
+          <div class="fullWidthList_hiddenListContent">
+            <ul id="preferences">
+              <li>Color:
+                <ul id="colors">
+                  <li id="#7825BE" value="#7825BE" style="background-color:#7825BE"></li>
+                  <li id="#6379ff" value="#6379ff" style="background-color:#6379ff"></li>
+                  <li id="#199976" value="#199976" style="background-color:#199976"></li>
+                  <li id="#F9903B" value="#F9903B" style="background-color:#F9903B"></li>
+                  <li id="#FF1D18" value="#FF1D18" style="background-color:#FF1D18"></li>
+                </ul>
+              </li>
+              <li>Profile Picture:</li>
+              <ul id="profilePics">
+                <li>
+                  <img id="profile-0" class="changeProfilePics" value="profile-0" src="../images/profile-0.jpg">
+                </li>
+                <li>
+                  <img id="profile-1" class="changeProfilePics" value="profile-1" src="../images/profile-1.jpg">
+                </li>
+                <li>
+                  <img id="profile-2" class="changeProfilePics" value="profile-2" src="../images/profile-2.jpg">
+                </li>
+                <li>
+                  <img id="profile-3" class="changeProfilePics" value="profile-3" src="../images/profile-3.jpg">
+                </li>
+                <li>
+                  <img id="profile-4" class="changeProfilePics" value="profile-4" src="../images/profile-4.jpg">
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </li>
+        <li id="deleteAccount">
+          <p class="dropdownTitle">Delete Account</p>
+        </li>
+    </div>
+
+    </ul>
+  </div>
+
+  <div id="deleteConfirmPopup" class="confirmationPopupHolder" style="display:none; height: 115%;">
+    <div class="confirmationPopup">
+      <p class="confirmationPopup_content">Are you sure you want to remove your account? Deletion is final.</p>
+      <button id="confirmDelete" type="button" class="confirmationPopup_button">Confirm</button></br>
+      <button id="cancelPopup" type="button" class="confirmationPopup_button">Cancel</button>
+    </div>
+  </div>
+
+  <div id="confirmLogoutPopup" class="confirmationPopupHolder" style="display:none">
+    <div class="confirmationPopup">
+      <p class="confirmationPopup_content">Are you sure you want to log out?</p>
+      <button id="confirmLogout" type="button" class="confirmationPopup_button">Yes</button></br>
+      <button id="cancelLogout" type="button" class="confirmationPopup_button">Cancel</button>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="../javascript/myUserInfo.js"></script>
+
+</html>

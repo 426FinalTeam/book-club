@@ -1,0 +1,446 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+ul{
+	padding:0;
+}
+
+html{
+	height:100%;
+	margin:0;
+	min-height:100%;
+	font-family: 'gilroy-light', cursive;
+}
+
+body{
+	background-color:white ;
+	height:100%;
+	margin:0%;
+	min-height:100%;
+}
+
+/*CSS for page header*/
+#topInfoContainer{/*Holder for everything in the top info bar*/
+	height:10vh;
+	max-width:100%;
+	font-weight: 700;
+	vertical-align: top;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 2%;
+}
+.infoBarElement{
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	margin-top: 3vh;
+}
+.infoBarElement h1{
+	color: white;
+	font-size: 4vh;
+	vertical-align: middle;
+	margin: 0;
+}
+#logo {
+	display: inline-block;
+	height: 8vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+#caption {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3vh;
+}
+#nextUpBrand img {
+	height: 8vh;
+	width: auto;
+}
+#nextUpBrand h1 {
+	vertical-align: middle;
+}
+
+#caption a{
+	color:inherit;
+	text-decoration:none;
+}
+
+#userName{
+	cursor:pointer;
+}
+
+
+/*The following 'panel' styling is styling pertaining to 2 main panels on this page*/
+.mainPanel {
+	height:87vh;
+	margin:0;
+	display: inline-block;
+}
+
+#leftPanel{
+	width: 15%;
+	margin: 0;
+	vertical-align: top;
+	text-align: left;
+}
+
+.centerPanel{
+	width:84%;
+	margin: 0;
+	padding-top:0;
+	vertical-align:top;
+}
+.centerPanel2 {
+	width:84%;
+	margin: 0;
+	padding-top:0;
+	vertical-align:top;
+}
+
+.cycleHeader {
+	text-align: left;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	white-space: nowrap;
+	border-bottom: 10px solid;
+}
+
+/*Class for all everything on the left panel; two sets of navigable lists*/
+.leftPanelStuff{
+    text-align: left;
+}
+
+.leftPanelStuff ul {
+    padding: 0;
+		margin-top:0;
+}
+
+.leftPanelStuff p{
+	font-size: 20px;
+	color: black;
+	font-weight:  700;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 10px;
+}
+
+.leftPanelStuff a{
+	color:inherit;
+	text-decoration:inherit;
+}
+
+
+.leftPanelStuff p:hover{
+	margin-left: 0px;
+	border-left: 10px solid;
+	transition: color, border-left, margin-left .4s;
+	cursor: pointer;
+}
+
+.center input{ /*edits for the search bar at top left*/
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	margin-right: 2%;
+	margin-left: 5vw;
+	width: 30%;
+	max-width: 30%;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius:20px;
+	border: 3px grey solid;
+}
+
+.center input:focus{
+	border: 3px solid;
+	outline: none;
+}
+
+/*Styling for the main, central panel that includes more or less a list of parties*/
+.center ul{
+	padding-top:0;
+	margin: 0;
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 80vh;
+	list-style:none;
+	text-align:center;
+	padding-left:5px;
+}
+
+.center ul li{
+	margin-top:1vh;
+	margin-bottom:1vh;
+	color: grey;
+	background-color: white;
+	-webkit-box-shadow: 4px 6px 13px 0px rgba(173,173,173,0.4);
+	-moz-box-shadow: 4px 6px 13px 0px rgba(173,173,173,0.4);
+	box-shadow: 4px 6px 13px 0px rgba(173,173,173,0.4);
+	font-size: 20px;
+	width: 90%;
+	border-top: solid 5px grey;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:left;
+}
+
+.searchListItem img{
+	margin-left:30px;
+	height:171px;
+	width:121px;
+}
+
+.centeringContainer{
+	width:70%;
+	text-align:center;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.searchListItem_infoContainer{
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	height:100%;
+	width:500px;
+}
+
+.searchListItem_infoContainer > p{
+	overflow:hidden;
+	text-overflow:ellipsis;
+
+}
+
+.searchListButton{
+	font-weight:100;
+	margin-top:10px;
+}
+
+.votingListItem img{
+	margin-left:30px;
+	height:171px;
+	width:121px;
+}
+
+.votingListButton{
+	font-weight:100;
+	margin-top:10px;
+}
+
+.votingListItem_infoContainer{
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	height:100%;
+	width:500px;
+}
+
+.votingListItem_infoContainer > p{
+	
+}
+
+
+
+.center ul li:hover{
+	color: black;
+	border-top: solid 5px;
+ 	-webkit-box-shadow: 4px 6px 13px 0px rgba(173,173,173,1);
+	-moz-box-shadow: 4px 6px 13px 0px rgba(173,173,173,1);
+	box-shadow: 4px 6px 13px 0px rgba(173,173,173,1);
+	transition: color,border-top, box-shadow .2s
+
+}
+
+.center ul li p{
+	display:inline-block;
+	padding-bottom:1vh;
+	padding-top:1vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+.queue li div{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-weight: 600;
+}
+
+.title {
+	width: 60%;
+}
+
+.info {
+	width: 20%;
+}
+
+.queue img {
+	height: 8vh;
+	width: auto;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+button {
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+	border: 2px solid;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+button:disabled {
+	background-color: gray;
+	border-color: gray;
+}
+button:active {
+	background-color: white;
+}
+
+
+/*Styling for input on form general across site*/
+.centeredInput{
+	display:inline-block;
+	height:35px;
+	width:250px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.fullWidthList{
+	text-align:center;
+	list-style-type:none;
+	padding-left:0px;
+}
+
+.fullWidthList li{
+	display:inline-block;
+	text-align:center;
+	width:50%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.fullWidthList > li:hover{
+	box-shadow: 0px 5px 10px #888888;
+}
+
+.fullWidthList_hiddenListContent{
+	display:none;
+	width:100%;
+	background-color:white;
+	height:200px;
+}
+
+.popUpHolder{
+	width:84%;
+	display:inline-block;
+}
+
+
+/*Styling for time keeper in bottom left hand corner of main.html*/
+.leftPanelStuff_topBox h6{
+	margin-bottom:0.5px;
+	margin-top:1px;
+}
+
+.leftPanelStuff_topBox p{
+	margin-top:0.5px;
+	margin-bottom:0.5px;
+	margin-left:0.5px;
+}
+
+.leftPanelStuff_topBox{
+	text-align:center;
+	border: 2px solid;
+}
+
+.leftPanelStuff_topBox p:hover{
+	margin-left: 0px;
+	border-left: 0px;
+	color: black;
+	transition: color, border-left, margin-left .4s;
+	cursor:default;
+}
+
+/*Styling for popup to confirm descision*/
+.confirmationPopupHolder{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirmationPopup{
+  position:absolute;
+  display:inline-block;
+  margin-left:35vw;
+  margin-right:35vw;
+  height:30vh;
+  width:30vw;
+  margin-top:35vh;
+  margin-bottom:35vh;
+  background-color:white;
+  text-align:center;
+}
+
+.confirmationPopup_content{
+  margin-top:60px;
+  display:inline-block;
+  width:100%;
+
+}
+
+.confirmationPopup_button{
+  margin-top:15px;
+}
+
+/*Holder for user information*/
+.flexHolder{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.flexHolderRow{
+	display:flex;
+	flex-direction:row;
+	height:100%;
+}
+
+.fullWidthDiv{
+  text-align:center;
+	width:100%;
+}
+
+.mainContentHolder{
+  flex:1 1 100px;
+}
+
+/*the following is a class for displaying user book preferences.*/
+.thumbnailImg{
+	display:inline-block;
+	height:100%;
+	width:10%;
+}
+
+/*The following is for displaying user book favorites on userInfo*/
+.thumbnailImgDropdown{
+	display:inline-block;
+	height:40%;
+}

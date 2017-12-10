@@ -1,0 +1,76 @@
+#bigUserPic{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+
+#faveBooks{
+  display:flex;
+  flex-direction:row;
+  height:100%;
+  width:80%;
+}
+
+#faveBooks > li{
+  height:100%;
+}
+
+/*Need to fix the styling and add functionality to scrolling through fav books.*/
+.scrollContainers{
+  width:10%;
+}
+
+.scrollContainers:hover{
+  background-color:	#DCDCDC;
+
+}
+
+.scrollContainers img{
+  margin-top:80px;
+}
+
+#scrollLeft{
+
+}
+
+#scrollRight{
+
+}
+
+#colors li {
+  width: 30px;
+  height: 30px;
+}
+
+#profilePics li{
+  width: 30px;
+  height: 30px;
+}
+
+.changeProfilePics{
+  width: 30px;
+  height: 30px;
+  display:inline-block;
+}
+
+#userInfo > li{
+  width:100%;
+}
+
+.dropdownTitle{
+  font-weight:bold;
+  cursor:pointer;
+}
+
+
+.bookNameList{
+  margin-top:2px;
+  margin-bottom:5px;
+  height:70px;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+.profilePicSelect {
+  margin-right: 10px;
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Book Club</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/core.css" />
+	<link rel="stylesheet" href="../css/colors.css" />
+	<link rel="stylesheet" href="../css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+	<script type="text/javascript" src="../javascript/logout.js"></script>
+	<!--Books viewer api-->
+	<script src="../javascript/main.js"></script>
+</head>
+
+<body>
+	<div id="topInfoContainer">
+		<div class="infoBarElement" id="nextUpBrand" style="margin: 0; text-align:left">
+			<div id="logo">
+				<!--img tag with fake 'logo' could go here in the future-->
+			</div>
+			<div id="caption">
+				<h1>
+					<a href="main.html">Book Club</a>
+				</h1>
+			</div>
+		</div>
+		<div class="infoBarElement" style="text-align: center;">
+			<h1>Main Book Queue</h1>
+		</div>
+		<div class="infoBarElement" style="text-align: right;">
+			<h1 id="userName"></h1>
+		</div>
+	</div>
+
+
+	<div id="leftPanel" class="mainPanel">
+		<div class="leftPanelStuff">
+			<ul style="text-align: left;">
+				<div class="leftPanelStuff_topBox">
+					<!--Could havd "Time left for voting" show up here as well -->
+					<h6>Time Remaining</h6>
+					<p id="countDown"></p>
+				</div>
+				<p>
+					<a id="voteOnBook">Next Cycle's Books</a>
+				</p>
+				<p>
+					<a id="suggestBook">Suggest Book</a>
+				</p>
+				<p>
+					<a href="myUserInfo.html">View My Profile</a>
+				</p>
+				<p>
+					<a href="otherUserInfo.html">See Other Users</a>
+				</p>
+			</ul>
+		</div>
+	</div>
+	<div id="centerPanel" class="mainPanel centerPanel centerPanel2 center">
+		<div class="cycleHeader">
+			<h1>Currently in:
+				<span class="cyclePeriod">test</span>
+			</h1>
+		</div>
+		<div id="currentBook">
+			<h1>This cycle's book is...</h1>
+			<div id="currentBookInfo">
+			</div>
+			<button id="addToFavorites" type="button">Add to Favorites</button>
+			<p id="addToFavoritesPrompt"></p>
+		</div>
+	</div>
+	<div id="searchInterface" class="popUpHolder centerPanel center" style="display: none;">
+		<div class="cycleHeader">
+			<h1>Currently in:
+				<span class="cyclePeriod">test</span>
+			</h1>
+		</div>
+		<input type="search" placeholder="Search Books" id="searchbar">
+		<div class="exitButton" id="exitSearch">X</div>
+		<ul id="bookList" class="CenterPanelList">
+			<!--<li class="searchListItem">
+				<img src="../images/placeHolder.png">
+				<div class="centeringContainer">
+					<div class="searchListItem_infoContainer">
+						<p>big title</p>
+						</br>
+						<p>by parker</p>
+						</br>
+						<button class="searchListButton" type=button>Suggest this book</button>
+					</div>
+				</div>
+			</li>-->
+		</ul>
+	</div>
+
+	<div id="votingInterface" class="popUpHolder centerPanel2 center" style="display:none;">
+		<div class="cycleHeader">
+			<h1>Currently in:
+				<span class="cyclePeriod">test</span>
+			</h1>
+		</div>
+		<h3 id="votingInterfaceHeader">Vote on what book you'd like to read next!</h3>
+		<div class="exitButton" id="exitVote">X</div>
+		<ul id="votingList" class="CenterPanelList">
+			<li class="votingListItem">
+				<img src="../images/placeHolder.png">
+				<div class="centeringContainer">
+					<div class="votingListItem_infoContainer">
+						<p>big title</p>
+						</br>
+						<p>by parker</p>
+						</br>
+						<button class="votingListButton" type=button>Suggest this book</button>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div id="confirmQueuePopup" class="confirmationPopupHolder" style="display:none">
+		<div class="confirmationPopup">
+			<p class="confirmationPopup_content">Successfully queued the book!</p>
+			<button id="popupConfirm" type="button" class="confirmationPopup_button">Continue</button>
+		</div>
+	</div>
+
+	<div id="confirmLogoutPopup" class="confirmationPopupHolder" style="display:none">
+		<div class="confirmationPopup">
+			<p class="confirmationPopup_content">Are you sure you want to log out?</p>
+			<button id="confirmLogout" type="button" class="confirmationPopup_button">Yes</button>
+			</br>
+			<button id="cancelLogout" type="button" class="confirmationPopup_button">Cancel</button>
+		</div>
+	</div>
+
+</body>
+
+</html>

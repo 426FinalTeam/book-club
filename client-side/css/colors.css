@@ -1,0 +1,163 @@
+.background-purple {
+	background-color: #7825BE;
+}
+.color-purple {
+	color: #7825BE;
+}
+.border-purple {
+	border-color: #7825BE;
+}
+.leftPanel-purple p:hover {
+	border-left-color: #7825BE;
+	color: #7825BE;
+}
+.leftPanel-purple .select {
+	color: #7825BE;
+}
+.input-purple:focus{
+	border-color: #7825BE;
+	color: #7825BE; 
+}
+.center-purple ul li:hover {
+	border-color: #7825BE; 
+}
+.button-purple {
+	background-color: #7825BE;
+	border-color: #7825BE;
+}
+.button-purple:active {
+	color: #7825BE;
+}
+
+
+
+.background-blue {
+	background-color: #6379ff;
+}
+.color-blue {
+	color: #6379ff;
+}
+.border-blue {
+	border-color: #6379ff;
+}
+.leftPanel-blue p:hover {
+	border-left-color: #6379ff;
+	color: #6379ff;
+}
+.leftPanel-blue .select {
+	color: #6379ff;
+}
+.input-blue:focus{
+	border-color: #6379ff;
+	color: #6379ff; 
+}
+.center-blue ul li:hover {
+	border-color: #6379ff; 
+}
+.button-blue {
+	background-color: #6379ff;
+	border-color: #6379ff;
+}
+.button-blue:active {
+	color: #6379ff;
+}
+
+
+
+.background-green {
+	background-color: #199976;
+}
+.color-green {
+	color: #199976;
+}
+.border-green {
+	border-color: #199976;
+}
+.leftPanel-green p:hover {
+	border-left-color: #199976;
+	color: #199976;
+}
+.leftPanel-green .select {
+	color: #199976;
+}
+.input-green:focus{
+	border-color: #199976;
+	color: #199976; 
+}
+.center-green ul li:hover {
+	border-color: #199976; 
+}
+.button-green {
+	background-color: #199976;
+	border-color: #199976;
+}
+.button-green:active {
+	color: #199976;
+}
+
+
+
+.background-orange {
+	background-color: #F9903B;
+}
+.color-orange {
+	color: #F9903B;
+}
+.border-orange {
+	border-color: #F9903B;
+}
+.leftPanel-orange p:hover {
+	border-left-color: #F9903B;
+	color: #F9903B;
+}
+.leftPanel-orange .select {
+	color: #F9903B;
+}
+.input-orange:focus{
+	border-color: #F9903B;
+	color: #F9903B; 
+}
+.center-orange ul li:hover {
+	border-color: #F9903B; 
+}
+.button-orange {
+	background-color: #F9903B;
+	border-color: #F9903B;
+}
+.button-orange:active {
+	color: #F9903B;
+}
+
+
+
+
+.background-red {
+	background-color: #FF1D18;
+}
+.color-red {
+	color: #FF1D18;
+}
+.border-red {
+	border-color: #FF1D18;
+}
+.leftPanel-red p:hover {
+	border-left-color: #FF1D18;
+	color: #FF1D18;
+}
+.leftPanel-red .select {
+	color: #FF1D18;
+}
+.input-red:focus{
+	border-color: #FF1D18;
+	color: #FF1D18; 
+}
+.center-red ul li:hover {
+	border-color: #FF1D18; 
+}
+.button-red {
+	background-color: #FF1D18;
+	border-color: #FF1D18;
+}
+.button-red:active {
+	color: #FF1D18;
+}

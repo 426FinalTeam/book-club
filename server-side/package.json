@@ -1,0 +1,13 @@
+{
+  "name": "bookclub-server",
+  "version": "1.0.0",
+  "description": "Server side logic for Book Club web app  ",
+  "main": "index.js",
+  "author": "Parker Ballner",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "express-session": "^1.15.6",
+    "mysql": "^2.14.1"
+  }
+}

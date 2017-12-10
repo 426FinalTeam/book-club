@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Book Club</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/core.css" />
+	<link rel="stylesheet" href="../css/colors.css" />
+	<link rel="stylesheet" href="../css/otherUserInfo.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+	<script src="../javascript/otherUserInfo.js"></script>
+	<script type="text/javascript" src="../javascript/logout.js"></script>
+</head>
+
+<body>
+	<div id="topInfoContainer">
+		<div class="infoBarElement" id="nextUpBrand" style="margin: 0; text-align:left">
+			<div id="logo">
+				<!--img tag with fake 'logo' could go here in the future-->
+			</div>
+			<div id="caption">
+				<h1>
+					<a href="main.html">Book Club</a>
+				</h1>
+			</div>
+		</div>
+		<div class="infoBarElement" style="text-align: center;">
+			<h1>User Info</h1>
+		</div>
+		<div class="infoBarElement" style="text-align: right;">
+			<h1 id="userName"></h1>
+		</div>
+	</div>
+
+	<div id="otherUserInfoContentContainer">
+		<div class="rowOfProfileContainers" id='0'>
+			<!--<div class="rowOfProfileContainers_userInfo">
+      <img class="otherUserProfilePic" src="../images/placeHolder.png">
+        <p>User name</p>
+				<button type="button" data-username="username" class="otherUserButton">See more info</button>
+  	</div>-->
+		</div>
+		<div class="rowOfProfileContainers" id='1'>
+
+		</div>
+		<div class="rowOfProfileContainers" id='2'>
+
+		</div>
+	</div>
+	<div id="showMoreHolder">
+		<img id="scrollLeft" src="../images/leftScroll.png">
+		<img id="scrollRight" src="../images/rightScroll.png">
+	</div>
+
+	<div id="popupPanel" class="userInfoPopupHolder" style="display:none;">
+		<div class="userInfoPopup">
+			<div class="flexHolder">
+				<div class="fullWidthDiv" id="userImgHolder">
+					<img id="userPopupPic" src="../images/placeHolder.png">
+					<h3 id="nameGoesHere"></h3>
+				</div>
+				<div class="mainContentHolder">
+					<ul class="popupList">
+						<li id="booksContainer">
+							<p id="favoriteBooksHeader">Favorite Books</p>
+							<ul id="faveBooks">
+							</ul>
+							<button id="exitPopup" type="button" class="confirmationPopup_button">Exit</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="confirmLogoutPopup" class="confirmationPopupHolder" style="display:none">
+		<div class="confirmationPopup">
+			<p class="confirmationPopup_content">Are you sure you want to log out?</p>
+			<button id="confirmLogout" type="button" class="confirmationPopup_button">Yes</button></br>
+			<button id="cancelLogout" type="button" class="confirmationPopup_button">Cancel</button>
+		</div>
+	</div>
+
+</body>
